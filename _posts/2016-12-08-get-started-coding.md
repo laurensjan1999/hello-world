@@ -10,7 +10,7 @@ Github
 : Get a github account and the github education pack
 : <https://education.github.com/pack>
 
-***
+
 
 # Editor
 
@@ -26,7 +26,7 @@ Sublime Text 3
 : A more fully featured free editor.
 : <https://www.sublimetext.com/3>
 
-***
+
 
 # Frameworks
 
@@ -42,7 +42,7 @@ WrapBootstrap
 : Online marketplace for customized bootrstrap frameworks, also offering additional (UI) elements.
 : <https://wrapbootstrap.com/>
 
-***
+
 
 # Learning
 
@@ -54,7 +54,7 @@ Codecademy
 : Gamefication of code school
 : <https://www.codecademy.com/>
 
-***
+
 
 # Code Snippets
 
@@ -62,7 +62,7 @@ CSS-Tricks.com
 : For CSS (styling), usually get here via google.
 : <https://css-tricks.com/>
 
-***
+
 
 # App deployment
 
