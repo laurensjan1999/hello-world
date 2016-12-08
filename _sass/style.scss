@@ -176,9 +176,14 @@ footer {
   }
 }
 
+.headline, .meta {
+  @include media-query($on-tablet) {
+    text-align: center;
+  }
+}
+
 .headline {
   font-size: 2.4em;
-  text-align: center;
 
   @include media-query($on-tablet) {
     font-size: 3em;
@@ -198,17 +203,17 @@ footer {
 .meta {
   color: $grey-color;
   font-style: italic;
-  text-align: center;
   margin-bottom: 20px;
 
   @include media-query($on-tablet) {
     margin-bottom: 60px;
   }
-
   @include media-query($on-desktop) {
     text-align: left;
   }
 }
+
+
 
 
 
