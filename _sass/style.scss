@@ -23,7 +23,7 @@ body {
   }
 
   @include media-query($on-desktop) {
-    padding-top: 100px;
+    padding-top: 160px;
     max-width: $content-width;
   }
 
@@ -33,10 +33,11 @@ body {
 h1,h2,h3,h4,h5,h6 {
    font-family: "Lato", "Helvetica Neue", Helvetica, sans-serif;
    font-weight: bold;
-   line-height: 1.8;
+   line-height: 0.85em;
    margin: 0;
    text-transform: capitalize;
 }
+
 
 a {
   color: $brand-color;
@@ -98,7 +99,7 @@ blockquote {
 
 footer {
   @include media-query($on-tablet) {
-    margin-top: 60px;
+    margin-top: 120px;
   }
 }
 
@@ -107,8 +108,8 @@ footer {
   background-image: url(../images/left-arrow.svg);
   background-repeat: no-repeat;
   position: fixed;
-  top: 90%;
-  right: 5%;
+  top: 50px;
+  left: 50px;
   height: 30px;
   width: 30px;
   opacity: 0.6;
@@ -121,14 +122,13 @@ footer {
     height: 40px;
     width: 40px;
     opacity: 0.9;
-    top: 50px;
-    left: 50px;
+
   }
 
 }
 
 .lj {
-  background-image: url(../images/lj-small.png);
+  background-image: url(../images/lj.png);
   background-size: contain;
   background-repeat: no-repeat;
   margin: 0 auto;
@@ -147,9 +147,9 @@ footer {
     position: fixed;
     top: 0;
     left: 50%;
-    -webkit-transform: translate(-640px, 80px);
-    -ms-transform: translate(-640px, 80px);
-    transform: translate(-640px, 80px);
+    -webkit-transform: translate(-640px, 110px);
+    -ms-transform: translate(-640px, 110px);
+    transform: translate(-640px, 110px);
   }
 }
 
@@ -178,19 +178,35 @@ footer {
 
 .headline {
   font-size: 2.4em;
+  text-align: center;
 
   @include media-query($on-tablet) {
+    font-size: 3em;
+  }
+
+  @include media-query($on-laptop) {
     font-size: 4em;
   }
+
+  @include media-query($on-desktop) {
+    text-align: left;
+    font-size: 5em;
+  }
+
 }
 
 .meta {
   color: $grey-color;
   font-style: italic;
-  margin-top: -1em;
+  text-align: center;
+  margin-bottom: 20px;
+
+  @include media-query($on-tablet) {
+    margin-bottom: 60px;
+  }
 
   @include media-query($on-desktop) {
-    margin-bottom: 60px;
+    text-align: left;
   }
 }
 
