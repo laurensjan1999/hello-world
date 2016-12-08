@@ -97,6 +97,8 @@ blockquote {
 }
 
 footer {
+  margin-top:40px;
+  
   @include media-query($on-tablet) {
     margin-top: 120px;
   }
