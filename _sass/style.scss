@@ -5,6 +5,14 @@
     transition-timing-function: linear;
       } */
 
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('../fonts/fontawesome-webfont.eot?v=4.7.0');
+  src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
 html {
   background: url($background-image-url) no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -25,9 +33,15 @@ body {
   height: 100%;
 
   @include media-query($on-laptop) {
-    padding: 3em 1em;
+    padding-top: 3em;
     max-width: $content-width;
   }
+
+  @include media-query($on-desktop) {
+    padding-top: 100px;
+    max-width: $content-width;
+  }
+
 
 }
 
@@ -148,10 +162,20 @@ footer {
     position: fixed;
     top: 0;
     left: 50%;
-    -webkit-transform: translate(-50%, -30%);
-    -ms-transform: translate(-50%, -30%);
-    transform: translate(-620px, 40px);
+    -webkit-transform: translate(-640px, 80px);
+    -ms-transform: translate(-640px, 80px);
+    transform: translate(-640px, 80px);
   }
+}
+
+.github-link::before {
+  font-family: 'FontAwesome';
+  content: "\f09b";
+  font-size: 1.8em;
+  padding-right:.3em;
+  margin-top: -.05em;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .video {
@@ -178,7 +202,14 @@ footer {
 .meta {
   color: $grey-color;
   font-style: italic;
+  margin-top: -1em;
+
+  @include media-query($on-desktop) {
+    margin-bottom: 60px;
+  }
 }
+
+
 
 
 // Adding 'Contents' headline to the TOC
