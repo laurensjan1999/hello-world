@@ -1,9 +1,10 @@
 ---
 layout: post
 title:  "Get Started Coding"
+permalink: "2016/get-started-coding"
 ---
 
-## General
+# General
 
 Github
 : Get a github account and the github education pack
@@ -11,7 +12,7 @@ Github
 
 ***
 
-## Editor
+# Editor
 
 Atom.io
 : Open source editor developed by Github,
@@ -27,7 +28,7 @@ Sublime Text 3
 
 ***
 
-## Frameworks
+# Frameworks
 
 Laravel (PHP)
 : For PHP go with Laravel.
@@ -43,7 +44,7 @@ WrapBootstrap
 
 ***
 
-## Learning
+# Learning
 
 Laracasts
 : Laracasts "Netflix for coding", definitely worth the money.
@@ -54,7 +55,7 @@ Laracasts
 
 ***
 
-## Code Snippets
+# Code Snippets
 
 CSS-Tricks.com
 : For CSS (styling), usually get here via google.
@@ -62,7 +63,7 @@ CSS-Tricks.com
 
 ***
 
-## App deployment
+# App deployment
 
 Heroku
 : Platform-as-a-Service for apps, requires some special procedures, but web server management out of the mix.
