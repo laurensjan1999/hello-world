@@ -48,20 +48,6 @@ a {
 
 
 
-.post a {
-  color: $text-color;
-  text-decoration: none;
-  background: -webkit-linear-gradient(transparent 90%, lighten($brand-color, 10%) 10%);
-  box-shadow: inset 0 0 0 0 lighten($brand-color, 10%);
-  -webkit-transition: box-shadow ease 1s;
-  -moz-transition: box-shadow ease 1s;
-  transition: box-shadow ease 1s;
-  &:hover {
-    color: lighten($hover-color, 50%);
-    box-shadow: inset 0 -100px 0 0 lighten($brand-color, 10%);
-  }
-}
-
 
 figure {
   margin: 0;
@@ -100,56 +86,6 @@ dt {
 }
 
 
-.home {
-  background-image: url(../images/left-arrow.svg);
-  background-repeat: no-repeat;
-  position: fixed;
-  bottom: 60px;
-  right: 40px;
-  height: 40px;
-  width: 40px;
-  opacity: 0.6;
-
-  &:hover {
-    opacity: 1;
-  }
-
-  @include media-query($on-tablet) {
-    height: 50px;
-    width: 50px;
-    opacity: 0.8;
-    top: 50px;
-    left: 50px;
-  }
-
-}
-
-.lj {
-  background-image: url(../images/lj.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  margin: 0 auto;
-  height: 120px;
-  width: 120px;
-
-  @include media-query($on-tablet) {
-    background-image: url(../images/lj.png);
-    height: 140px;
-    width: 140px;
-  }
-
-  @include media-query($on-desktop) {
-    height: 180px;
-    width: 180px;
-    position: fixed;
-    top: 0;
-    left: 50%;
-    -webkit-transform: translate(-640px, 90px);
-    -ms-transform: translate(-640px, 90px);
-    transform: translate(-640px, 90px);
-  }
-}
-
 .video {
   width: 100%;
   height: 180px;
@@ -162,51 +98,6 @@ dt {
     height: 360px;
   }
 }
-
-.headline, .meta {
-  @include media-query($on-tablet) {
-    text-align: center;
-  }
-}
-
-.headline {
-  margin-top: 20px;
-  font-size: 2.4em;
-  line-height: 0.85em;
-
-  @include media-query($on-tablet) {
-    font-size: 3em;
-  }
-
-  @include media-query($on-laptop) {
-    font-size: 4em;
-  }
-
-  @include media-query($on-desktop) {
-    text-align: left;
-    font-size: 5em;
-  }
-
-}
-
-.meta {
-  color: $grey-color;
-  font-style: italic;
-  margin-bottom: 10px;
-
-  @include media-query($on-tablet) {
-    margin-bottom: 20px;
-  }
-  @include media-query($on-desktop) {
-    margin-bottom: 60px;
-    text-align: left;
-  }
-}
-
-.spacer {
-  height: $spacing-unit;
-}
-
 
 
 
