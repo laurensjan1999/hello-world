@@ -2,7 +2,6 @@ html {
   background: url($background-image-url) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
 }
 
@@ -13,12 +12,12 @@ body {
   line-height: $base-line-height;
   font-size: $base-font-size;
   color: $text-color;
-  padding: 1em;
+  padding: 40px 20px;
   text-rendering: optimizeLegibility;
   height: 100%;
 
   @include media-query($on-laptop) {
-    padding-top: 3em;
+    padding-top: 60px;
     max-width: $content-width;
   }
 
