@@ -6,7 +6,13 @@ layout: compress
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ page.title }} - {{site.title}}</title>
+  <title>
+    {% if page.layout == "homepage" %}
+      {{ site.title }}
+    {% else %}
+      {{ page.title }} - {{site.title}}
+    {% endif %}
+  </title>
   <link href="https://fonts.googleapis.com/css?family=Lato:900|Work+Sans:400,600" rel="stylesheet">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
   <link rel="stylesheet" href="{{site.baseurl}}/css/main.css">
@@ -14,16 +20,23 @@ layout: compress
 </head>
 <body>
   <header>
+    {% if page.layout != "homepage" %}
+      <a href="{{site.baseurl}}/"><div class="home"></div></a>
+    {% endif %}
     <div class="lj"></div>
   </header>
 
   {{ content }}
 
   <footer>
-
-      <div class="links">
-          <a href="https://github.com/laurensjan" class="github-link"><span>Github - laurensjan</span></a>
-      </div>
+    <ul class="sm-buttons">
+      <li><a href="https://github.com/laurensjan" class="sm-button sm-github">
+        <span>laurensjan on GitHub</span>
+      </a></li>
+      <li><a href="https://nl.linkedin.com/in/laurensjanterwee" class="sm-button sm-linkedin">
+        <span>laurensjan on LinkedIn</span>
+      </a></li>
+    </ul>
   </footer>
 
 {% include analytics.html %}

@@ -99,15 +99,6 @@ dt {
   font-weight: bold;
 }
 
-footer {
-  margin: 40px 0 60px;
-
-  @include media-query($on-tablet) {
-    margin: 80px 0 120px;
-
-  }
-}
-
 
 .home {
   background-image: url(../images/left-arrow.svg);
@@ -204,30 +195,16 @@ footer {
   margin-bottom: 10px;
 
   @include media-query($on-tablet) {
-    margin-bottom: 60px;
+    margin-bottom: 20px;
   }
   @include media-query($on-desktop) {
+    margin-bottom: 60px;
     text-align: left;
   }
 }
 
-.github-link {
-  color: $grey-color;
-  &:hover {
-    color: $text-color;
-  }
-}
-
-.github-link span {
-  display: none;
-}
-
-.github-link::before {
-  font-family: 'FontAwesome';
-  content: "\f09b";
-  font-size: 1.8em;
-  display: inline-block;
-  vertical-align: middle;
+.spacer {
+  height: $spacing-unit;
 }
 
 
