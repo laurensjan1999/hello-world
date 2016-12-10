@@ -29,9 +29,32 @@
   }
 
   @include media-query($on-desktop) {
-    display: none;
+    background-position: left;
+    background-size: 14px 14px;
+    position: fixed;
+    top: 320px;
+    left: 50%;
+    -webkit-transform: translate(-575px, 0);
+    -ms-transform: translate(-575px, 0);
+    transform: translate(-605px, 0);
+    width: 100px;
+
+
   }
 }
+
+.home > span {
+  display: none;
+
+  @include media-query($on-desktop) {
+    font-size: 1.45em;
+    font-weight: 300;
+    display: inline-block;
+    margin-left: 20px;
+    vertical-align: middle;
+  }
+}
+
 
 .lj {
   position: relative;
