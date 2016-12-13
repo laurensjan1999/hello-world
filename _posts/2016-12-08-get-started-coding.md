@@ -12,6 +12,8 @@ Github
 
 
 # Editor
+Cloud9 (online IDE)
+: <https://c9.io/>
 
 PHPStorm
 : <https://www.jetbrains.com/phpstorm/> (free student license)
@@ -26,6 +28,9 @@ Atom.io
 
 Laravel (PHP)
 : <https://laravel.com/>
+
+Vue.js (JS)
+: <https://vuejs.org/>
 
 Bootstrap (front-end)
 : <http://getbootstrap.com/>
