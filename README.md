@@ -1,2 +1,1 @@
-# Laurens Jan
-Data for my Jekyll powered website.
+Just a placeholder
