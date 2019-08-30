@@ -1,7 +1,8 @@
 body{
-    background-color: #eeeeee ;
+    background-color: lightblue ;
     font-family: "Arial" , "Verdane" , sans-serif ;
     
 }
+li {border: 1px solid black;}
 
 td{ border: 1px solid black;}
